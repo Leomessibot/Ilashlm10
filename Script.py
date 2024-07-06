@@ -146,14 +146,12 @@ This module only works for my admins
 <b>»» Iғ U Cᴏɴᴛᴀᴄᴛ Mᴇ Sᴇᴇ Bᴇʟᴏᴡ Bᴜᴛᴛᴏɴs 😙</b>
 """
 
-    STATUS_TXT = """<b><u>Cᴜʀʀᴇɴᴛ Dᴀᴛᴀʙᴀsᴇ Sᴛᴀᴛᴜs</b></u>
-    
-<b>📑 ғɪʟᴇs sᴀᴠᴇᴅ: <code>{}</code>
-👩🏻‍💻 ᴜsᴇʀs: <code>{}</code>
-👥 ɢʀᴏᴜᴘs: <code>{}</code>
-🗂️ ᴏᴄᴄᴜᴘɪᴇᴅ: <code>{}</code>
-🗄️ ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code></b>
-"""
+    STATUS_TXT =  """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
+★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
+★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
+★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 
+★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> """
+
     LOG_TEXT_G = """<b> #NewGroup
 👥 ɢʀᴏᴜᴘ 👥 = {}(<code>{}</code>)
 😇 ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀs 😇 = <code>{}</code>
