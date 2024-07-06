@@ -109,6 +109,8 @@ class script(object):
 
 <code>{file_name}</code>
 =========== • ✠ • ===========
+▫️ ᴄʜᴀɴɴᴇʟ : @cinemaworld_update
+▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @cinemaworld_123
 =========== • ✠ • ===========
 <i>This file 📁 will be deleted ❌ from this bot 🤖 within 5 ⏰ minutes due to copyright ©️</i>
 
