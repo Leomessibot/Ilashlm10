@@ -542,11 +542,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿𝚂 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('👑 ᴏᴡɴᴇʀ', callback_data='about'),
+            InlineKeyboardButton('⚡ 𝙷𝙴𝙻𝙿', callback_data='help'),
             InlineKeyboardButton('👥 ɢʀᴏᴜᴘ', url='https://t.me/cinemaworld_123')
             ],[
             InlineKeyboardButton('🎬 ᴄʜᴀɴɴᴇʟ', url='https://t.me/cinemaworld_update'),
-            InlineKeyboardButton('🔐 ᴄʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('ℹ️ 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
