@@ -588,15 +588,75 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "owner":
+    elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 𝙱𝙰𝙲𝙺', callback_data='about')
+            InlineKeyboardButton('🛰️ ᴋᴏʏᴇʙ ꜱᴛᴀᴛᴜꜱ ☁️',callback_data='rendr')
+            ],[
+            InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', callback_data='gtheropm'),
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto("https://telegra.ph/file/89de0d28af87a9f06751f.jpg")
+        )
         await query.message.edit_text(
             text=script.OWNER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "gtheropm":
+        await query.answer("📵 ᴄᴏɴᴛᴀᴄᴛ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ\n\n- ꜱᴇᴄᴛɪᴏɴ B206 - ꜱᴘᴀᴍ + ʙᴀɴ ⚠️\n\n- ꜱᴇᴄᴛɪᴏɴ Y8R6 - ꜱᴘᴀᴍ + ʀᴇᴘᴏʀᴛ 🉐\n\n🗽 ʙʏ ◉‿◉ 𝐋𝐄𝐎 𝐌𝐄𝐒𝐒𝐈", show_alert=True)
+        
+    elif query.data == "movieinfo":
+        await query.answer("⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nᴀꜰᴛᴇʀ 30 ᴍɪɴᴜᴛᴇᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ\n\nɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜱᴇᴇ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ / sᴇʀɪᴇs ꜰɪʟᴇ, ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ɴᴇxᴛ ᴘᴀɢᴇ\n\n© ᴄɪɴɪᴍᴀʟᴏᴋʜᴀᴍ", show_alert=True)
+        
+    elif query.data == "movss":
+        await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴋɢꜰ ᴄʜᴀᴘᴛᴇʀ 2  2022\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©  ᴄɪɴɪᴍᴀʟᴏᴋʜᴀᴍ", show_alert=True)
+        
+    elif query.data == "moviis":
+        await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ʟᴏᴋɪ S01 E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n© ᴄɪɴɪᴍᴀʟᴏᴋʜᴀᴍ", show_alert=True)
+        
+    elif query.data == "neosub":
+        await query.answer("അഥവാ ഗ്രൂപ്പ്‌ കോപ്പിറൈറ് കിട്ടി പോയാൽ.. പുതിയ ഗ്രൂപ്പ്‌ തുടങ്ങുമ്പോൾ ഇപ്പോൾ ജോയിൻ ആകുന്ന ചാനൽ വഴി ആയിരിക്കും അറിയിക്കുന്നത് 🤥",show_alert=True)
+        
+    elif query.data == "malt":
+        await query.answer("പകർപ്പവകാശം കാരണം 5 മിനിറ്റിനുള്ളിൽ ഈ ബോട്ടിൽ നിന്ന് ഈ ഫയൽ ഇല്ലാതാക്കപ്പെടും", show_alert=True)
+        
+    elif query.data == "hindt":
+        await query.answer("कॉपीराइट के कारण यह फ़ाइल 5 मिनट के भीतर इस बॉट से हटा दी जाएगी", show_alert=True)
+        
+    elif query.data == "arat":
+        await query.answer("سيتم حذف هذا الملف من هذا الروبوت خلال 5 دقائق بسبب حقوق الطبع والنشر", show_alert=True)
+        
+    elif query.data == "rendr":
+        uptime = get_uptime()
+        percent = cpu_status()
+        ram_usage = get_ram_status()
+        total, used, free = get_storage_status()
+        message = (
+            f"⌬ ꜱʏꜱᴛᴇᴍ ꜱᴛᴀᴛᴜꜱ ⌬\n\n"
+            f"♽ ᴜᴘᴛɪᴍᴇ : {uptime}\n"
+            f"✇ ᴄᴘᴜ : {percent}\n"
+            f"{ram_usage}\n"
+            f"♼ ᴛᴏᴛᴀʟ ᴅɪꜱᴋ : {total}\n"
+            f"❐ ᴜꜱᴇᴅ ꜱᴘᴀᴄᴇ : {used}\n"
+            f"⎉ ꜰʀᴇᴇ ꜱᴘᴀᴄᴇ : {free}"
+        
+        await query.answer(message, show_alert=True)
+        
+    elif query.data == "time1":
+        day, date, time, time_zone_info = get_current_datetime_info()
+        uptime = get_uptime()
+        message = (
+            f"👋 Hᴇʟʟᴏ\n\n"
+            f"⏰ Tɪᴍᴇ : {time}\n"
+            f"⚡ Zᴏɴᴇ : Asia/Kolkata\n"
+            f"⏳ Uᴩᴛɪᴍᴇ : {uptime}\n\n"
+            f"© Cɪɴɪᴍᴀʟᴏᴋʜᴀᴍ"
+        )
+        await query.answer(message, show_alert=True)
         )
     elif query.data == "manuelfilter":
         buttons = [[
