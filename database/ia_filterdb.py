@@ -25,7 +25,7 @@ sync_col = sync_db["DATA"]
 
 # MongoDB Document definition for Media
 @instance.register
-class Media(Document):
+    class Media(Document):
     file_id = fields.StrField(attribute='_id')
     file_ref = fields.StrField(allow_none=True)
     file_name = fields.StrField(required=True)
