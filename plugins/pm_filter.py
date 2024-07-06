@@ -1,4 +1,4 @@
-# Codeded By 🧑‍💻
+# Codeded By Leo messi 
 import asyncio
 import re, shutil
 import ast
@@ -540,7 +540,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
        )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('⚡ ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs ʙᴜᴛᴛᴏɴs ⚡️', callback_data='start')
+            InlineKeyboardButton('➕ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿𝚂 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('👑 ᴏᴡɴᴇʀ', callback_data='about'),
             InlineKeyboardButton('👥 ɢʀᴏᴜᴘ', url='https://t.me/cinemaworld_123')
