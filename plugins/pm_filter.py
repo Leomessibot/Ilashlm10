@@ -533,7 +533,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text="""<b>{} {}</b>
             
-<b>Sᴏʀʀʏ ɪ ᴏɴʟʏ ᴡᴏʀᴋ ᴏɴ</b> <b><a href='https://t.me/cinemaworld_123'>Cⁱⁿᵉᵐᵃ Wᵒʳˡᵈ</a></b><b> Gʀᴏᴜᴘ. Nᴏ ᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ ᴛʜɪs ʙᴏᴛ ᴇxᴄᴇᴘᴛ ᴘɪɴɢ. ᴅᴏɴ’ᴛ ᴡᴀsᴛᴇ ʏᴏᴜʀ ᴛɪᴍᴇ</b>""".format(
+<b>ᴵ ᴬᴹ ᵂᴼᴿᴷᴵᴺᴳ ᶠᴼᴿ</b> <b><a href='https://t.me/cinemaworld_123'>Cⁱⁿᵉᵐᵃ Wᵒʳˡᵈ</a></b><b> Gʀᴏᴜᴘ.ᴵ ᴬᴸˢᴼ ᵂᴼᴿᴷ ᶠᴼᴿ ᴼᵀᴴᴱᴿ ᴳᴿᴼᵁᴾˢ ᴶᵁˢᵀ ᴬᴰᴰ ᴹᴱ ᴬˢ ᴬᴰᴹᴵᴺ ᴬᴺᴰ ᴱᴺᴶᴼʸ ᴹᴼⱽᴵᴱˢ</b>""".format(
                 get_greeting(), query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
