@@ -645,7 +645,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f"⎉ ꜰʀᴇᴇ ꜱᴘᴀᴄᴇ : {free}"
         
         await query.answer(message, show_alert=True)
-        
+      )  
     elif query.data == "time1":
         day, date, time, time_zone_info = get_current_datetime_info()
         uptime = get_uptime()
