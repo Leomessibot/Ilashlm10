@@ -593,7 +593,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('👥 𝙶𝚁𝙾𝚄𝙿', url='https://t.me/cinemaworld_123')
             ],[
             InlineKeyboardButton('🎬 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/cinemaworld_update'),
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('👩‍🦯 𝙱𝙰𝙲𝙺', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -607,7 +607,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML    
         )
         await query.answer(message, show_alert=True)
-        )
+        ]]
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 𝙱𝙰𝙲𝙺', callback_data='help'),
